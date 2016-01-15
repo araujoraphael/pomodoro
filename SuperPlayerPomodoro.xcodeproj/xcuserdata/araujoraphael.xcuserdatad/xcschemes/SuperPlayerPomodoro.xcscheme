@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0710"
+   LastUpgradeVersion = "0720"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -18,6 +18,20 @@
                BuildableName = "SuperPlayerPomodoro.app"
                BlueprintName = "SuperPlayerPomodoro"
                ReferencedContainer = "container:SuperPlayerPomodoro.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1B40226AFFCAFE0025A5C71C2794F3FC"
+               BuildableName = "Pods_SuperPlayerPomodoro.framework"
+               BlueprintName = "Pods-SuperPlayerPomodoro"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FontAwesome.swift-FontAwesome.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FontAwesome.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SuperPlayerPomodoro.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>177880DF984882904B129F403C2C1158</key>
+		<key>12FB1AA5C5E0453EF9BF3E0A27DDCFAD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1B40226AFFCAFE0025A5C71C2794F3FC</key>
+		<key>6D9EDCF48A5AA1A0B1FB393CB904CF6F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>62B364CA7400DB931619A0EA2C4D3F02</key>
+		<key>744D8936F538391EE0E1CD29AC2DAC87</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C107A01B9F38326F72B68FC67D5CE657</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE42EFCA03A3C2CF7B16633271DA2E6B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

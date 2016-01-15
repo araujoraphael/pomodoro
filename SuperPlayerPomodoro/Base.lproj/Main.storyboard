@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Pomodoro-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="SuperPlayerPomodoro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="MainViewController" customModule="SuperPlayerPomodoro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -18,15 +19,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pomodoro.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ieg-Rd-Tjg">
-                                <rect key="frame" x="200" y="9" width="200" height="189"/>
-                                <animations/>
+                                <rect key="frame" x="239" y="71" width="122" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="6qz-Nx-hk3"/>
                                     <constraint firstAttribute="height" constant="189" id="8IG-EL-KcR"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="189" id="95s-qF-D27"/>
                                     <constraint firstAttribute="width" constant="240" id="DUL-ha-IuL"/>
+                                    <constraint firstAttribute="width" constant="143" id="FtD-io-jLY"/>
+                                    <constraint firstAttribute="width" constant="122" id="HMJ-WN-HJR"/>
+                                    <constraint firstAttribute="height" constant="173" id="QJz-3s-I8u"/>
                                     <constraint firstAttribute="width" constant="200" id="UQE-9W-9Nv"/>
+                                    <constraint firstAttribute="height" constant="125" id="UuB-zo-0mC"/>
                                     <constraint firstAttribute="height" constant="189" id="Xyq-Ll-qj4"/>
+                                    <constraint firstAttribute="width" constant="178" id="hGN-C3-ndi"/>
+                                    <constraint firstAttribute="height" constant="149" id="n5x-Z6-fdo"/>
                                     <constraint firstAttribute="width" constant="200" id="onf-Ct-as3"/>
                                     <constraint firstAttribute="height" constant="219" id="qeo-Eu-kHE"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="xfR-t4-drl"/>
@@ -34,8 +40,16 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="6qz-Nx-hk3"/>
+                                        <exclude reference="8IG-EL-KcR"/>
+                                        <exclude reference="95s-qF-D27"/>
                                         <exclude reference="DUL-ha-IuL"/>
+                                        <exclude reference="FtD-io-jLY"/>
+                                        <exclude reference="QJz-3s-I8u"/>
+                                        <exclude reference="UQE-9W-9Nv"/>
                                         <exclude reference="Xyq-Ll-qj4"/>
+                                        <exclude reference="hGN-C3-ndi"/>
+                                        <exclude reference="n5x-Z6-fdo"/>
                                         <exclude reference="onf-Ct-as3"/>
                                         <exclude reference="qeo-Eu-kHE"/>
                                         <exclude reference="xfR-t4-drl"/>
@@ -44,8 +58,7 @@
                                 </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFr-Oz-E1r">
-                                <rect key="frame" x="207" y="415" width="187" height="40"/>
-                                <animations/>
+                                <rect key="frame" x="207" y="358" width="187" height="40"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Npv-E2-bix"/>
@@ -56,13 +69,15 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="startStopButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="JmU-va-6kS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNt-BQ-9yf">
-                                <rect key="frame" x="256" y="278" width="88" height="45"/>
-                                <animations/>
+                                <rect key="frame" x="256" y="233" width="88" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="106" id="B6A-3z-3fm"/>
                                     <constraint firstAttribute="height" constant="45" id="IW3-Kc-bah"/>
@@ -83,41 +98,75 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2z7-hY-zcc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pomodoro app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dB8-nx-d9N">
+                                        <rect key="frame" x="239" y="22" width="121" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="ARf-Jp-6xV"/>
+                                    <constraint firstItem="dB8-nx-d9N" firstAttribute="centerY" secondItem="2z7-hY-zcc" secondAttribute="centerY" id="CiC-5d-uov"/>
+                                    <constraint firstItem="dB8-nx-d9N" firstAttribute="centerX" secondItem="2z7-hY-zcc" secondAttribute="centerX" id="equ-5x-MVD"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ieg-Rd-Tjg" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="0CI-gM-uQe"/>
                             <constraint firstItem="XNt-BQ-9yf" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="363-7E-xqI"/>
-                            <constraint firstItem="XNt-BQ-9yf" firstAttribute="top" secondItem="Ieg-Rd-Tjg" secondAttribute="bottom" constant="80" id="4PS-4Y-vyv"/>
+                            <constraint firstItem="eFr-Oz-E1r" firstAttribute="top" secondItem="XNt-BQ-9yf" secondAttribute="bottom" constant="80" id="3k1-oc-Rnz"/>
+                            <constraint firstItem="XNt-BQ-9yf" firstAttribute="top" secondItem="Ieg-Rd-Tjg" secondAttribute="bottom" constant="50" id="4PS-4Y-vyv"/>
+                            <constraint firstItem="XNt-BQ-9yf" firstAttribute="top" secondItem="Ieg-Rd-Tjg" secondAttribute="bottom" constant="37" id="BBb-A0-HAU"/>
+                            <constraint firstItem="2z7-hY-zcc" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="Dq4-1C-v69"/>
                             <constraint firstItem="Ieg-Rd-Tjg" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Jdv-Bb-4Aj"/>
+                            <constraint firstItem="Ieg-Rd-Tjg" firstAttribute="top" secondItem="2z7-hY-zcc" secondAttribute="bottom" constant="7" id="Jnu-ls-9tw"/>
+                            <constraint firstItem="Ieg-Rd-Tjg" firstAttribute="top" secondItem="2z7-hY-zcc" secondAttribute="bottom" constant="7" id="Kz9-29-rRi"/>
                             <constraint firstItem="eFr-Oz-E1r" firstAttribute="top" secondItem="XNt-BQ-9yf" secondAttribute="bottom" constant="92" id="M2g-63-zXP"/>
+                            <constraint firstItem="2z7-hY-zcc" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="NjP-gZ-S17"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Ieg-Rd-Tjg" secondAttribute="bottom" constant="243" id="Nkq-ln-ZQx"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="eFr-Oz-E1r" secondAttribute="bottom" constant="100" id="RiQ-gp-rQ4"/>
                             <constraint firstItem="Ieg-Rd-Tjg" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="69" id="SwI-0W-7ZX"/>
                             <constraint firstItem="Ieg-Rd-Tjg" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="80" id="T9O-Wb-7eZ"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Ieg-Rd-Tjg" secondAttribute="bottom" constant="273" id="Wjk-eb-uY3"/>
+                            <constraint firstItem="2z7-hY-zcc" firstAttribute="centerX" secondItem="Ieg-Rd-Tjg" secondAttribute="centerX" id="a8G-I4-GdC"/>
                             <constraint firstItem="XNt-BQ-9yf" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="aw7-hR-brO"/>
                             <constraint firstItem="Ieg-Rd-Tjg" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="bQv-Fq-Hbv"/>
                             <constraint firstItem="Ieg-Rd-Tjg" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="69" id="h38-4Z-tRA"/>
                             <constraint firstItem="eFr-Oz-E1r" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="lM3-P1-lp6"/>
+                            <constraint firstItem="2z7-hY-zcc" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="mAo-Il-JLM"/>
+                            <constraint firstItem="2z7-hY-zcc" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" id="mrh-pP-fQw"/>
+                            <constraint firstAttribute="bottom" secondItem="2z7-hY-zcc" secondAttribute="bottom" constant="536" id="oef-bc-BSp"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="a8G-I4-GdC"/>
+                                <exclude reference="mAo-Il-JLM"/>
+                                <exclude reference="oef-bc-BSp"/>
                                 <exclude reference="Jdv-Bb-4Aj"/>
+                                <exclude reference="Jnu-ls-9tw"/>
                                 <exclude reference="SwI-0W-7ZX"/>
                                 <exclude reference="T9O-Wb-7eZ"/>
                                 <exclude reference="bQv-Fq-Hbv"/>
                                 <exclude reference="h38-4Z-tRA"/>
+                                <exclude reference="363-7E-xqI"/>
+                                <exclude reference="4PS-4Y-vyv"/>
+                                <exclude reference="M2g-63-zXP"/>
                                 <exclude reference="Nkq-ln-ZQx"/>
                                 <exclude reference="RiQ-gp-rQ4"/>
                                 <exclude reference="Wjk-eb-uY3"/>
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Pomodoro" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Pomodoro" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="elapsedTimeLabel" destination="XNt-BQ-9yf" id="iEp-Qv-kDV"/>
+                        <outlet property="pomodoroImg" destination="Ieg-Rd-Tjg" id="nFr-A6-eNy"/>
                         <outlet property="startStopButton" destination="eFr-Oz-E1r" id="rcj-Bk-nty"/>
                     </connections>
                 </viewController>
@@ -126,36 +175,79 @@
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
         <!--History-->
-        <scene sceneID="HYe-td-196">
+        <scene sceneID="GbM-Rk-lAK">
             <objects>
-                <tableViewController id="e0j-yZ-OSN" customClass="HistoryTableViewController" customModule="SuperPlayerPomodoro" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sQi-y1-tZX">
+                <viewController id="3Bh-lq-Q4f" customClass="HistoryViewController" customModule="SuperPlayerPomodoro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ruy-Cx-En5"/>
+                        <viewControllerLayoutGuide type="bottom" id="uaw-Z4-ifd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qt9-8O-4ZZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQZ-kI-vFs">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="63"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pomodoro app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLw-Go-kCT">
+                                        <rect key="frame" x="239" y="22" width="121" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="aLw-Go-kCT" firstAttribute="centerX" secondItem="AQZ-kI-vFs" secondAttribute="centerX" id="VJD-kV-zlt"/>
+                                    <constraint firstItem="aLw-Go-kCT" firstAttribute="centerY" secondItem="AQZ-kI-vFs" secondAttribute="centerY" id="xEn-9r-gFp"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2KA-Zb-L4D">
+                                <rect key="frame" x="0.0" y="63" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0VW-st-ouD" customClass="HistoryTableViewCell" customModule="SuperPlayerPomodoro" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0VW-st-ouD" id="CDQ-Z2-ODw">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="3Bh-lq-Q4f" id="bpo-NT-yw9"/>
+                                    <outlet property="delegate" destination="3Bh-lq-Q4f" id="zgN-ng-kqe"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="historyCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyCell" id="dJu-7U-pgt" customClass="HistoryTableViewCell" customModule="SuperPlayerPomodoro" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dJu-7U-pgt" id="qQz-9a-wsh">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
-                                </tableViewCellContentView>
-                                <animations/>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="e0j-yZ-OSN" id="GgX-E2-Wup"/>
-                            <outlet property="delegate" destination="e0j-yZ-OSN" id="coW-u6-P48"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="History" image="second" id="NLV-pr-Quv"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KqX-wt-cWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="2KA-Zb-L4D" firstAttribute="leading" secondItem="AQZ-kI-vFs" secondAttribute="leading" id="3Z1-5X-A11"/>
+                            <constraint firstItem="2KA-Zb-L4D" firstAttribute="trailing" secondItem="AQZ-kI-vFs" secondAttribute="trailing" id="6hd-Mk-xT1"/>
+                            <constraint firstItem="2KA-Zb-L4D" firstAttribute="top" secondItem="ruy-Cx-En5" secondAttribute="bottom" constant="43" id="90M-Mc-MBj"/>
+                            <constraint firstItem="2KA-Zb-L4D" firstAttribute="leading" secondItem="qt9-8O-4ZZ" secondAttribute="leading" id="Fyi-my-ILs"/>
+                            <constraint firstAttribute="trailing" secondItem="2KA-Zb-L4D" secondAttribute="trailing" id="Qck-4W-psB"/>
+                            <constraint firstItem="uaw-Z4-ifd" firstAttribute="top" secondItem="AQZ-kI-vFs" secondAttribute="bottom" constant="487" id="iOw-Uy-MUf"/>
+                            <constraint firstItem="AQZ-kI-vFs" firstAttribute="bottom" secondItem="2KA-Zb-L4D" secondAttribute="top" id="qSM-Bh-r0z"/>
+                            <constraint firstItem="AQZ-kI-vFs" firstAttribute="top" secondItem="qt9-8O-4ZZ" secondAttribute="top" id="qsO-tG-A7Y"/>
+                            <constraint firstAttribute="bottom" secondItem="2KA-Zb-L4D" secondAttribute="bottom" constant="50" id="sSF-gi-PL7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="iOw-Uy-MUf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="History" id="Wd1-PQ-Gzl"/>
+                    <connections>
+                        <outlet property="tableView" destination="2KA-Zb-L4D" id="OOn-Wl-Ghb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6xa-Tq-j4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="460"/>
+            <point key="canvasLocation" x="750" y="367"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -165,12 +257,11 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="e0j-yZ-OSN" kind="relationship" relationship="viewControllers" id="ygX-3w-ost"/>
+                        <segue destination="3Bh-lq-Q4f" kind="relationship" relationship="viewControllers" id="vtH-ON-P0W"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -179,8 +270,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
         <image name="pomodoro.png" width="256" height="256"/>
-        <image name="second" width="30" height="30"/>
     </resources>
+    <color key="tintColor" red="1" green="0.1102878176" blue="0.103259268" alpha="1" colorSpace="calibratedRGB"/>
 </document>

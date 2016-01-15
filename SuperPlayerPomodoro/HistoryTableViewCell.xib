@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,31 +15,41 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3D-LR-F9A">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3D-LR-F9A">
                         <rect key="frame" x="21" y="11" width="53" height="21"/>
-                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="sRV-6X-hcY"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="finished" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldC-po-xgT">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="finished" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldC-po-xgT">
                         <rect key="frame" x="21" y="30" width="56" height="21"/>
-                        <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="59 minutes ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5L-5y-1TS">
-                        <rect key="frame" x="211" y="21" width="101" height="21"/>
-                        <animations/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="59 minutes ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5L-5y-1TS">
+                        <rect key="frame" x="168" y="21" width="144" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <animations/>
+                <constraints>
+                    <constraint firstItem="d5L-5y-1TS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="17c-Vm-PpR"/>
+                    <constraint firstItem="d5L-5y-1TS" firstAttribute="leading" secondItem="ldC-po-xgT" secondAttribute="trailing" constant="91" id="5dS-Dy-PUf"/>
+                    <constraint firstItem="d5L-5y-1TS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13" id="B4d-by-TH3"/>
+                    <constraint firstItem="e3D-LR-F9A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="M3W-ql-lzR"/>
+                    <constraint firstItem="e3D-LR-F9A" firstAttribute="leading" secondItem="ldC-po-xgT" secondAttribute="leading" id="YAl-DX-J5f"/>
+                    <constraint firstItem="d5L-5y-1TS" firstAttribute="leading" secondItem="e3D-LR-F9A" secondAttribute="trailing" constant="94" id="hsQ-mn-vSj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ldC-po-xgT" secondAttribute="bottom" constant="3" id="jJF-SY-h70"/>
+                    <constraint firstItem="ldC-po-xgT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="22" id="tj7-hp-7du"/>
+                    <constraint firstItem="e3D-LR-F9A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="13" id="wTf-53-QNk"/>
+                    <constraint firstItem="d5L-5y-1TS" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="xHk-cy-fsm"/>
+                </constraints>
             </tableViewCellContentView>
-            <animations/>
             <connections>
                 <outlet property="currentStatusLabel" destination="ldC-po-xgT" id="vmM-hg-gtt"/>
                 <outlet property="pastTimeLabel" destination="d5L-5y-1TS" id="2Et-mq-vav"/>

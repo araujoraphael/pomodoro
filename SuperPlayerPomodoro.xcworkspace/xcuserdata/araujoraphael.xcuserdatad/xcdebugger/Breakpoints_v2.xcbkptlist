@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SuperPlayerPomodoro/FirstViewController.swift"
-            timestampString = "474440476.323722"
+            timestampString = "474527024.344315"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "pomodoroFinished()"
-            landmarkType = "5">
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "FirstViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -32,6 +32,22 @@
             startingLineNumber = "29"
             endingLineNumber = "29"
             landmarkName = "viewWillAppear(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SuperPlayerPomodoro/RLMPomodoro.swift"
+            timestampString = "474527232.76083"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "pomodorosByDate(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -11,7 +11,6 @@ import UIKit
 @objc protocol PomodoroDelegate{
     optional func pomodoroFinished()
     optional func pomodoroTimeUpdated(minutes: UInt8, seconds: UInt8)
-
 }
 
 class PomodoroViewController: UIViewController {
@@ -22,7 +21,6 @@ class PomodoroViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -30,7 +28,6 @@ class PomodoroViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     func start(time: Int) {
         pomodoro = RLMPomodoro()
@@ -44,6 +41,7 @@ class PomodoroViewController: UIViewController {
     func stop(withState: RLMPomodoro.PomodoroState) {
         pomodoro.currentState = withState
         pomodoro.stoppedAt = NSDate()
+        pomodoro.stoppedAtStr = PomodoroUtils.getFriendlyStringFromDate(pomodoro.stoppedAt, dateFormat: "yyyy-MM-dd", timeZone: NSTimeZone.systemTimeZone().name)
         pomodoro.save()
         timer.invalidate()
     }
@@ -52,31 +50,19 @@ class PomodoroViewController: UIViewController {
         
         let currentTime = NSDate.timeIntervalSinceReferenceDate()
         
-        //Find the difference between current time and start time.
-        
         var elapsedTime: NSTimeInterval = currentTime - startTime
-        
-        //calculate the minutes in elapsed time.
         
         let minutes = UInt8(elapsedTime / 60.0)
         
         elapsedTime -= (NSTimeInterval(minutes) * 60)
         
-        //calculate the seconds in elapsed time.
-        
         let seconds = UInt8(elapsedTime)
         
         elapsedTime -= NSTimeInterval(seconds)
         
-        
-        //add the leading zero for minutes, seconds and millseconds and store them as string constants
         let minutesLeft = UInt8(pomodoro.initialTimeInterval-1) - minutes
         let secondsLeft = 59 - seconds
         
-//        let strMinutes = String(format: "%02d", minutesLeft)
-//        let strSeconds = String(format: "%02d", secondsLeft)
-        
-
         pomodoro.elapsedTime = Int(minutes * 60 + seconds + 1)
         delegate?.pomodoroTimeUpdated!(minutesLeft, seconds: secondsLeft)
         if(minutesLeft == 0 && secondsLeft == 0) {
@@ -84,15 +70,4 @@ class PomodoroViewController: UIViewController {
             delegate?.pomodoroFinished!()
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

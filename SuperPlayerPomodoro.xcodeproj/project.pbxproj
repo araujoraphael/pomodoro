@@ -9,15 +9,16 @@
 /* Begin PBXBuildFile section */
 		A30E9483DD0BF9CCAD3456AE /* Pods_SuperPlayerPomodoro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991FB68007B66CB6AC3E2E4B /* Pods_SuperPlayerPomodoro.framework */; };
 		BD80124F1C44A88600FDE8EF /* RLMPomodoro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80124E1C44A88600FDE8EF /* RLMPomodoro.swift */; };
+		BD99B10E1C48992000942BA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD99B10D1C48992000942BA9 /* Assets.xcassets */; };
+		BD99B1101C48993700942BA9 /* alien-siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD99B10F1C48993700942BA9 /* alien-siren.mp3 */; };
 		BDC3AC551C44B48300AF7B7C /* PomodoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3AC541C44B48300AF7B7C /* PomodoroViewController.swift */; };
 		BDC3AC5A1C4608AD00AF7B7C /* PomodoroUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3AC591C4608AD00AF7B7C /* PomodoroUtils.swift */; };
 		BDC3AC5E1C467FB800AF7B7C /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3AC5C1C467FB800AF7B7C /* HistoryTableViewCell.swift */; };
 		BDC3AC5F1C467FB800AF7B7C /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDC3AC5D1C467FB800AF7B7C /* HistoryTableViewCell.xib */; };
 		BDD1F5E91C41D09B00F53201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1F5E81C41D09B00F53201 /* AppDelegate.swift */; };
-		BDD1F5EB1C41D09B00F53201 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1F5EA1C41D09B00F53201 /* FirstViewController.swift */; };
-		BDD1F5ED1C41D09B00F53201 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1F5EC1C41D09B00F53201 /* HistoryTableViewController.swift */; };
+		BDD1F5EB1C41D09B00F53201 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1F5EA1C41D09B00F53201 /* MainViewController.swift */; };
+		BDD1F5ED1C41D09B00F53201 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1F5EC1C41D09B00F53201 /* HistoryViewController.swift */; };
 		BDD1F5F01C41D09B00F53201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD1F5EE1C41D09B00F53201 /* Main.storyboard */; };
-		BDD1F5F21C41D09B00F53201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD1F5F11C41D09B00F53201 /* Assets.xcassets */; };
 		BDD1F5F51C41D09B00F53201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD1F5F31C41D09B00F53201 /* LaunchScreen.storyboard */; };
 		BDD1F5FD1C41D72E00F53201 /* pomodoro.png in Resources */ = {isa = PBXBuildFile; fileRef = BDD1F5FC1C41D72E00F53201 /* pomodoro.png */; };
 /* End PBXBuildFile section */
@@ -27,16 +28,17 @@
 		94DFDEBEE065D5F199C17861 /* Pods-SuperPlayerPomodoro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperPlayerPomodoro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperPlayerPomodoro/Pods-SuperPlayerPomodoro.debug.xcconfig"; sourceTree = "<group>"; };
 		991FB68007B66CB6AC3E2E4B /* Pods_SuperPlayerPomodoro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperPlayerPomodoro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD80124E1C44A88600FDE8EF /* RLMPomodoro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLMPomodoro.swift; sourceTree = "<group>"; };
+		BD99B10D1C48992000942BA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD99B10F1C48993700942BA9 /* alien-siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "alien-siren.mp3"; sourceTree = "<group>"; };
 		BDC3AC541C44B48300AF7B7C /* PomodoroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomodoroViewController.swift; sourceTree = "<group>"; };
 		BDC3AC591C4608AD00AF7B7C /* PomodoroUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomodoroUtils.swift; sourceTree = "<group>"; };
 		BDC3AC5C1C467FB800AF7B7C /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		BDC3AC5D1C467FB800AF7B7C /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		BDD1F5E51C41D09B00F53201 /* SuperPlayerPomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperPlayerPomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD1F5E81C41D09B00F53201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BDD1F5EA1C41D09B00F53201 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		BDD1F5EC1C41D09B00F53201 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		BDD1F5EA1C41D09B00F53201 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BDD1F5EC1C41D09B00F53201 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		BDD1F5EF1C41D09B00F53201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BDD1F5F11C41D09B00F53201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDD1F5F41C41D09B00F53201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDD1F5F61C41D09B00F53201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDD1F5FC1C41D72E00F53201 /* pomodoro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pomodoro.png; sourceTree = "<group>"; };
@@ -79,11 +81,27 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		BD99B10B1C4898CC00942BA9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BD99B10C1C4898D200942BA9 /* Sounds */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		BD99B10C1C4898D200942BA9 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				BD99B10F1C48993700942BA9 /* alien-siren.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		BDC3AC561C44B49100AF7B7C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				BDD1F5EA1C41D09B00F53201 /* FirstViewController.swift */,
-				BDD1F5EC1C41D09B00F53201 /* HistoryTableViewController.swift */,
+				BDD1F5EA1C41D09B00F53201 /* MainViewController.swift */,
+				BDD1F5EC1C41D09B00F53201 /* HistoryViewController.swift */,
 				BDC3AC541C44B48300AF7B7C /* PomodoroViewController.swift */,
 			);
 			name = ViewControllers;
@@ -127,14 +145,15 @@
 		BDD1F5E71C41D09B00F53201 /* SuperPlayerPomodoro */ = {
 			isa = PBXGroup;
 			children = (
+				BD99B10B1C4898CC00942BA9 /* Assets */,
 				BDC3AC5B1C467F8B00AF7B7C /* Views */,
 				BDC3AC581C46087A00AF7B7C /* Utils */,
 				BDC3AC561C44B49100AF7B7C /* ViewControllers */,
 				BD37B3051C44A4300065ED78 /* Models */,
 				BDD1F5E81C41D09B00F53201 /* AppDelegate.swift */,
+				BD99B10D1C48992000942BA9 /* Assets.xcassets */,
 				BDD1F5EE1C41D09B00F53201 /* Main.storyboard */,
 				BDD1F5FC1C41D72E00F53201 /* pomodoro.png */,
-				BDD1F5F11C41D09B00F53201 /* Assets.xcassets */,
 				BDD1F5F31C41D09B00F53201 /* LaunchScreen.storyboard */,
 				BDD1F5F61C41D09B00F53201 /* Info.plist */,
 			);
@@ -205,9 +224,10 @@
 			files = (
 				BDD1F5F51C41D09B00F53201 /* LaunchScreen.storyboard in Resources */,
 				BDC3AC5F1C467FB800AF7B7C /* HistoryTableViewCell.xib in Resources */,
-				BDD1F5F21C41D09B00F53201 /* Assets.xcassets in Resources */,
+				BD99B1101C48993700942BA9 /* alien-siren.mp3 in Resources */,
 				BDD1F5FD1C41D72E00F53201 /* pomodoro.png in Resources */,
 				BDD1F5F01C41D09B00F53201 /* Main.storyboard in Resources */,
+				BD99B10E1C48992000942BA9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,13 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDD1F5ED1C41D09B00F53201 /* HistoryTableViewController.swift in Sources */,
+				BDD1F5ED1C41D09B00F53201 /* HistoryViewController.swift in Sources */,
 				BDD1F5E91C41D09B00F53201 /* AppDelegate.swift in Sources */,
 				BDC3AC5E1C467FB800AF7B7C /* HistoryTableViewCell.swift in Sources */,
 				BDC3AC5A1C4608AD00AF7B7C /* PomodoroUtils.swift in Sources */,
 				BDC3AC551C44B48300AF7B7C /* PomodoroViewController.swift in Sources */,
 				BD80124F1C44A88600FDE8EF /* RLMPomodoro.swift in Sources */,
-				BDD1F5EB1C41D09B00F53201 /* FirstViewController.swift in Sources */,
+				BDD1F5EB1C41D09B00F53201 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -372,7 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -386,6 +406,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SuperPlayerPomodoro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.araujoraphael.SuperPlayerPomodoro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -399,6 +420,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SuperPlayerPomodoro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.araujoraphael.SuperPlayerPomodoro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
